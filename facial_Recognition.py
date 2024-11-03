@@ -4,12 +4,7 @@ import numpy as np
 import os
 
 # Load multiple known images and learn how to recognize them
-known_images = [
-    "Aster.jpeg",
-    "Elias.jpeg",
-    "NEBA.jpeg",
-    "Selam.jpeg"
-]
+known_images = [] # Insert your images here
 
 known_face_encodings = []
 known_face_names = [os.path.splitext(os.path.basename(image))[0] for image in known_images]  # Get filenames without extensions
